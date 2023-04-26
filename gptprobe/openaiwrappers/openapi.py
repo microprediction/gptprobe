@@ -3,7 +3,7 @@ import os
 from gptprobe.openaiwrappers.opendefaults import DEFAULT_ENGINE, DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS
 
 
-def ask_gpt(question, key_choice:int=0,
+def ask_using_environ(question, key_choice:int=0,
                       engine=None,
                       max_tokens=None,
                       temperature=None, **kwargs):
@@ -47,4 +47,4 @@ def ask_gpt(question, key_choice:int=0,
 
 if __name__=='__main__':
     from gptprobe.private_setenv import NOTHING
-    print(ask_gpt(question="Is this a good question?"))
+    print(ask_using_environ(question="Is this a good question?"))
