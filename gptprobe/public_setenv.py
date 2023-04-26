@@ -1,3 +1,5 @@
+# Just an example of setting the env variables required to use this package.
+
 GPT_PROBE_0 = 'sk-ekOvFjAHKETQ9NOTAREALKEYSDNXwE3jyy7IHKA4s'
 GPT_PROBE_1 = 'sk-X0hK82TSSbananasinpijamasarerunning downz1gpT3'
 GPT_PROBE_2 = 'sk-24W74IputyourkeyshereobviouslyQyQFdt2ymTewRc'

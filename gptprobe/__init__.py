@@ -1,1 +1,1 @@
-from gptprobe.parsing.dictionaries import ask_for_numeric_dict
+from gptprobe.parsing.askfornumericdict import ask_for_numeric_dict

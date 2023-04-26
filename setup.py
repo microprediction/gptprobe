@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="gptprobe",
-    version="0.0.1",
+    version="0.0.3",
     description="Probing chatgpt",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
     ],
-    packages=["gptprobe"],
+    packages=["gptprobe","gptprobe.openaiwrappers","gptprobe.utilfortests","gptprobe.parsing"],
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
