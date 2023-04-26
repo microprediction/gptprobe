@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="gptprobe",
-    version="0.0.3",
+    version="0.0.4",
     description="Probing chatgpt",
     long_description=README,
     long_description_content_type="text/markdown",
