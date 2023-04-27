@@ -33,7 +33,8 @@ Maybe you want to mimic [gptprobe/public_setenv.py](https://github.com/micropred
 - See the [examples](https://github.com/microprediction/gptprobe/tree/main/examples).
      
      
-Suggestions: file an issue. Pull requests are welcomed. 
+## Troubleshooting
+File an [issue](https://github.com/microprediction/gptprobe/issues). Pull requests are welcomed. 
      
 ![](https://raw.githubusercontent.com/microprediction/gptprobe/main/docs/assets/images/probe.png)
      
