@@ -13,7 +13,8 @@ The result is
 
     {"Australia": "1", "Brazil": "2"}
    
-This package contains simple and complex multi-step interrogations intended to yield structured data. 
+This package contains simple and complex multi-step interrogations intended to yield structured data, including patterns where ChatGPT4 tries to 
+help itself out of a rut, rephrases questions, ratifies answers using a different key, and so forth. 
 
 # Install & environ setup
 
