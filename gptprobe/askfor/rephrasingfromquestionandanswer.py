@@ -63,12 +63,8 @@ if __name__=='__main__':
               """
     answer = """ The dictionary is {'Dog':12312,'sydney':17} """
 
-    d1 = ask_why_answer_is_wrong(question=question, answer=answer)
-    print(d1)
 
-    d2 = ask_for_rephrasing_from_question_answer_and_flaw(question=question, answer=answer, flaw=d1['reason'])
-    print(d2)
 
-    d3 = ask_for_rephrasing_from_question_answer_and_flaw(question=question, answer=answer, flaw=None)
+    d3 = ask_for_flaw_from_question_and_answer(question=question, answer=answer)
     print(d3)
 
