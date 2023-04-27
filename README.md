@@ -12,7 +12,7 @@ The result is a Python dictionary:
     {'France': 4, 'Croatia': 2}
    
 This package contains simple and complex multi-step interrogations intended to yield structured data, including patterns where ChatGPT4 tries to 
-help itself out of a rut, rephrases questions, ratifies answers using a different key, tries to reformat its own responses, and so forth. 
+help itself out of a rut, rephrases questions, ratifies answers using a different key, tries to reformat its own responses, and so forth. It may help with your own unmanned missions into the galactic brain. 
 
 # Install & environ setup
 
