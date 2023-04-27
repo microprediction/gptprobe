@@ -35,7 +35,7 @@ Maybe you want to mimic [gptprobe/public_setenv.py](https://github.com/micropred
 - See the [examples](https://github.com/microprediction/gptprobe/tree/main/examples).
      
      
-!()[https://github.com/microprediction/gptprobe/blob/main/docs/assets/images/probe.png]
+!()[https://raw.githubusercontent.com/microprediction/gptprobe/main/docs/assets/images/probe.png]
      
 
 
