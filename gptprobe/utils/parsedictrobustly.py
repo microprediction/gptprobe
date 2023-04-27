@@ -2,6 +2,14 @@ import re
 import json
 
 
+def dict_parsing_error(text):
+    try:
+        d = json.loads(text)
+        return ' ... or maybe not'
+    except Exception as e:
+        return str(e)
+
+
 def switch_quotes(s: str) -> str:
     # Use a temporary placeholder that is unlikely to appear in the original string
     placeholder = '\uFFFF'

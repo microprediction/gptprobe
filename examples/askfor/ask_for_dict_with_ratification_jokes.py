@@ -6,11 +6,10 @@ if __name__=='__main__':
     from pprint import pprint
     from gptprobe.askfor.dictfromquestionwithratification import ask_for_dict_from_question_with_ratification
 
-    question = """Return a dictionary with double-quoted keys comprising five tree names and numeric values
-                  indicating the month of the year when they are most likely to bloom. 
+    question = """Return three occupation names, each with a funny joke about the occupation. 
                """
     import os
     os.environ['GPTPROBE_VERBOSITY']="1"
 
-    d = ask_for_dict_from_question_with_ratification(question=question)
+    d = ask_for_dict_from_question_with_ratification(question=question, numeric_values_only=False)
     pprint(d)
