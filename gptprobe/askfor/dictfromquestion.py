@@ -19,10 +19,10 @@ def ask_for_dict_from_question(question:str, key_choice=0, numeric_values_only=F
     :param open_kwargs:
     :return:
     """
-    from gptprobe.askfor.dictfromtext import ask_for_dict_from_text
+    from gptprobe.askfor.dictfrompoorlyformattedtext import ask_for_dict_from_poorly_formatted_text
     response = ask_for_text_from_question(question, key_choice=key_choice)
     rotated_key_choice = (key_choice + 1) % 3
-    return ask_for_dict_from_text(text=response, numeric_values_only=numeric_values_only, key_choice=rotated_key_choice)
+    return ask_for_dict_from_poorly_formatted_text(text=response, numeric_values_only=numeric_values_only, key_choice=rotated_key_choice)
 
 
 ask_for_dict = ask_for_dict_from_question

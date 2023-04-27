@@ -1,5 +1,5 @@
 from gptprobe.askfor.dictfromquestion import ask_for_dict_from_question
-from gptprobe.askfor.dictfromtext import ask_for_dict_from_text
+from gptprobe.askfor.dictfrompoorlyformattedtext import ask_for_dict_from_poorly_formatted_text
 from gptprobe.askfor.textfromquestion import ask_for_text_from_question
 from gptprobe.askfor.rephrasingfromquestionandanswer import ask_for_rephrasing_from_question_and_answer
 from gptprobe.askfor.ratificationfromquestionandanswer import ask_for_ratification_from_question_and_answer
@@ -28,8 +28,8 @@ def ask_for_dict_from_question_with_ratification(question: str, key_choice=0, nu
                                                               answer=first_answer,
                                                               key_choice=ratification_key_choice)
     if (ratification_dict.get('success') == 1) or (depth <= 0):
-        d_result = ask_for_dict_from_text(text=first_answer, key_choice=rephrasing_key_choice,
-                                          numeric_values_only=numeric_values_only)
+        d_result = ask_for_dict_from_poorly_formatted_text(text=first_answer, key_choice=rephrasing_key_choice,
+                                                           numeric_values_only=numeric_values_only)
         if d_result or (depth <= 0):
             return d_result
 
