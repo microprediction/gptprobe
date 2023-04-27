@@ -1,43 +1,39 @@
 # gptprobe
-Extracting information from ChatGPT 
+Example:
 
+    from gptprobe.private_setenv import NOTHING # Sets environ['OPEN_AI_KEY_0'], environ['OPEN_AI_KEY_1'], environ['OPEN_AI_KEY_2']
+    from gptprobe.askfor.textfrompoorlyformatteddicttext import ask_for_text_from_poorly_formatted_dict_text
+    messy_dict_text = """ Final scores are 
+                                      Australia  1 
+                                      Brazil     2
+                                        bummer """
+    print(ask_for_text_from_poorly_formatted_dict_text(text = messy_dict_text))
+    
+The result is
 
+    {"Australia": "1", "Brazil": "2"}
+   
+This package contains simple and complex multi-step interrogations intended to yield structured data, including patterns where ChatGPT4 tries to 
+help itself out of a rut, rephrases questions, ratifies answers using a different key, and so forth. 
 
-# Step 0: Install 
+# Install & environ setup
 
     pip install gptprobe 
     
-# Step 1: Inject three OpenAI keys
-From [open ai developer](https://platform.openai.com/account/api-keys) help yourself to three keys and inject them as follows:
+Then from [open ai developer](https://platform.openai.com/account/api-keys) help yourself to three keys and inject them as follows:
 
     import os 
     os.environ['OPEN_AI_KEY_0'] = 'sk-ekOvFjAHKETQYADDAYADDA'
     os.environ['OPEN_AI_KEY_1'] = 'sk-ekOvFjAHKETQYADDAYADDADO'
     os.environ['OPEN_AI_KEY_2'] = 'sk-ekOvFjAHKETQYADDAYADDADOO'
 
+Maybe you want to mimic [gptprobe/public_setenv.py](https://github.com/microprediction/gptprobe/blob/main/gptprobe/public_setenv.py) and import NOTHING from it. 
 
-# Step 2: Using it
-The package provides utility functions for getting better, more programmatically useful
-answers categorized by the complexity of the interaction. The more complex, the more it
-will cost you, of course. 
+## User Guide
 
-  | Verb   | Explanation                                                | Output   |
-  |------------------------------------------------------------|----------------------------------------------|----------|
-  | Prompt | A single question, with raw text response                  | text     |
-  | Ask    | A small number of prompts with a stuctured response        | dict     |
-  | Inquire| A more involved exploration (recursion depth param needed) | dict     |
+- See the [README](https://github.com/microprediction/gptprobe/blob/main/gptprobe/askfor/README.md) in the askfor directory. 
+- See the [examples](https://github.com/microprediction/gptprobe/tree/main/examples).
      
-### Examples of prompts (text output)
-
-     from gptprobe.promptfor.dictformat import prompt_for_dict_format
-     messy_dict_text = """ Final score are 
-                           Australia  1 
-                           Brazil     2
-                             bummer """
-     clean_dict_text = prompt_for_dict_format(messy_dict_text)
-
-
-
      
 
 
