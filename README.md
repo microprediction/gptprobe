@@ -3,11 +3,11 @@ Extracting information from ChatGPT
 
 
 
-### Install 
+# Step 0: Install 
 
     pip install gptprobe 
     
-### Keys 
+# Step 1: Inject three OpenAI keys
 From [open ai developer](https://platform.openai.com/account/api-keys) help yourself to three keys and inject them as follows:
 
     import os 
@@ -16,12 +16,28 @@ From [open ai developer](https://platform.openai.com/account/api-keys) help your
     os.environ['OPEN_AI_KEY_2'] = 'sk-ekOvFjAHKETQYADDAYADDADOO'
 
 
-### Usage 
-Simple one-line commands 
+# Step 2: Using it
+The package provides utility functions for getting better, more programmatically useful
+answers categorized by the complexity of the interaction. The more complex, the more it
+will cost you, of course. 
 
-     from gptprobe 
-     to_dict("""dog  17 , cat 133, dance 1388 
-                yadda badoodle -----""")
+  | Verb   | Explanation                                                | Output   |
+  |------------------------------------------------------------|----------------------------------------------|----------|
+  | Prompt | A single question, with raw text response                  | text     |
+  | Ask    | A small number of prompts with a stuctured response        | dict     |
+  | Inquire| A more involved exploration (recursion depth param needed) | dict     |
+     
+### Examples of prompts (text output)
+
+     from gptprobe.promptfor.dictformat import prompt_for_dict_format
+     messy_dict_text = """ Final score are 
+                           Australia  1 
+                           Brazil     2
+                             bummer """
+     clean_dict_text = prompt_for_dict_format(messy_dict_text)
+
+
+
      
 
 

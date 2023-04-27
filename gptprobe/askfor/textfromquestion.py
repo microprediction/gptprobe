@@ -1,12 +1,16 @@
 import openai
 import os
-from gptprobe.openaiwrappers.opendefaults import DEFAULT_ENGINE, DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS
+from gptprobe.utils.enginedefaults import DEFAULT_ENGINE, DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS
+
+# Main wrapper function for calling ChatGPT using a choice of key stored in environ, and params stored in environ
 
 
-def ask_using_environ(question, key_choice:int=0,
-                      engine=None,
-                      max_tokens=None,
-                      temperature=None, **kwargs):
+def ask_for_text_from_question(question,
+                               key_choice:int=0,
+                               engine=None,
+                               max_tokens=None,
+                               temperature=None,
+                               as_dict=False):
     """ Use open ai keys in environment variables like OPEN_AI_KEY_0 to ask a question
     :param key_choice  0, 1, or 2  typically
     :return:
@@ -39,12 +43,14 @@ def ask_using_environ(question, key_choice:int=0,
         prompt=question,
         max_tokens=max_tokens,
         stop=None,
-        temperature=temperature,
-        **kwargs
+        temperature=temperature
     )
-    return response.choices[0].text.strip()
+    response_text = response.choices[0].text.strip()
+    return {'success':1,'response':response_text} if as_dict else response_text
+
+
+ask_for_text = ask_for_text_from_question
 
 
 if __name__=='__main__':
-    from gptprobe.private_setenv import NOTHING
-    print(ask_using_environ(question="Is this a good question?"))
+    print(ask_for_text_from_question(question="Is this a good question?"))

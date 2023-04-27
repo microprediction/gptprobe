@@ -1,4 +1,4 @@
-from gptprobe.parsing.parsedictrobustly import parse_dict_robustly, dict_equal_or_none
+from gptprobe.utils.parsedictrobustly import parse_dict_robustly, dict_equal_or_none
 
 
 

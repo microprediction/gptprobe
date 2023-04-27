@@ -1,0 +1,1 @@
+from gptprobe.askfor.ratificationfromquestionandanswer import ask_for_ratification

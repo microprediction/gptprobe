@@ -1,0 +1,1 @@
+from gptprobe.askfor.textfromquestion import ask_for_text

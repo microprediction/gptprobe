@@ -1,0 +1,1 @@
+from gptprobe.askfor.flawfromquestionandanswer import ask_for_flaw
