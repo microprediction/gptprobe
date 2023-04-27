@@ -1,6 +1,9 @@
 # User Guide 
 
-### Basic usage of ask_for_
+See also the colab [tutorial](https://github.com/microprediction/gptprobe/blob/main/colab/gptprobe_tutorial.ipynb).
+
+
+### Finding what you want
 This package provides simple self-contained functions. 
 It is intended to be auto-complete friendly and self-descriptive, but there are
 shorthands provided. For example these are equivalent
