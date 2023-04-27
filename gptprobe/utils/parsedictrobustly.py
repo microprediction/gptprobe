@@ -20,6 +20,12 @@ def parse_dict_robustly(text, numeric_values_only=False):
     :param numeric_values_only:  If True,
     :return:
     """
+    try:
+        d = json.loads(text)
+        return d
+    except:
+        pass
+    text = text.replace("\n", " ")
     d1 = parse_dict_disjoint(text, numeric_values_only=numeric_values_only) or {}
     d2 = parse_dict_disjoint(switch_quotes(text), numeric_values_only=numeric_values_only) or {}
     d1.update(d2)

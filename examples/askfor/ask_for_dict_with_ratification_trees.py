@@ -5,8 +5,8 @@ if __name__=='__main__':
     from gptprobe.private_setenv import NOTHING
     from gptprobe.askfor.dictfromquestionwithratification import ask_for_dict_from_question_with_ratification
 
-    question = """Return a dictionary with double-quoted keys given by trees and numeric values
-                  indicating the month of the year when they are most likely to bloom.
+    question = """Return a dictionary with double-quoted keys comprising five tree names and numeric values
+                  indicating the month of the year when they are most likely to bloom. 
                """
     import os
     os.environ['GPTPROBE_VERBOSITY']="1"

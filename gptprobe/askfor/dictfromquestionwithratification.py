@@ -37,17 +37,16 @@ def ask_for_dict_from_question_with_ratification(question: str, prompt=None, key
     first_answer = ask_for_text_from_question(prompt, key_choice=key_choice)
     first_dict = ask_for_dict_from_poorly_formatted_text(text=first_answer, key_choice=key_2,
                                                        numeric_values_only=numeric_values_only)
-    if first_dict:
-        ratification_dict = ask_for_ratification_from_question_and_answer(question=question,
+
+    ratification_dict = ask_for_ratification_from_question_and_answer(question=question,
                                                               answer=first_answer,
                                                               key_choice=key_1)
-    else:
-        ratification_dict = {'success':0}
-        flaw = ask_for_flaw_from_question_and_answer(question=question, answer=first_answer, key_choice=key_2, as_dict=False)
-        ratification_dict['ratification'] = flaw
 
     if ratification_dict['success']:
-        return first_dict
+        if first_dict:
+            return first_dict
+        else:
+            ratification_dict['ratification'] = 'it seems the formatting of that answer made parsing hard'
 
     # We are not ratified, or the ratified result could not be parsed.
     #
@@ -56,19 +55,20 @@ def ask_for_dict_from_question_with_ratification(question: str, prompt=None, key
     #     2. Ask the rephrased question
     #     3. Supply a clarification on the original thread
 
-    flaw = ratification_dict['ratification']
+    flaw = ratification_dict.get('ratification')
     rephrasing = ask_for_rephrasing_from_question_answer_and_flaw(question=question, answer=first_answer, flaw=flaw, as_dict=False )
     clarification = ask_for_clarification_from_question_and_answer(question=question, answer=first_answer, flaw=flaw, as_dict=False)
     if os.environ.get('GPTPROBE_VERBOSITY'):
         from pprint import pprint
+        print('----- INFO: void GPTPROBE_VERBOSITY env to suppress ---- ')
         pprint({'question':question,'answer':first_answer,'flaw':flaw,'rephrasing':rephrasing,'clarification':clarification})
 
     # Now try all the possibilities
     # If short_circuit, we return as soon as we have a non-empty dict
     d = first_dict
-    questions = [ clarification, rephrasing, question ]
+    prompts     = [ clarification, rephrasing, question ]
     key_choices = [ key_choice, key_1, key_2 ]
-    for prompt, ky in zip(questions,key_choices):
+    for prompt, ky in zip(prompts,key_choices):
         d_ = ask_for_dict_from_question_with_ratification(question=question, key_choice=ky,
                                                           numeric_values_only=numeric_values_only,
                                                           depth=depth-1, prompt=prompt)
