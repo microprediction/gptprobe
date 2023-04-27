@@ -13,9 +13,11 @@ def ask_for_ratification_from_question_and_answer(question:str, answer:str,
     """
     ratification_question = """I will provide you a question and a solution delineated xml-style. I would
                                 like you to respond with a dictionary with a key "success" (double quotes) and 
-                                         a value equal to 1 if you think the question was answered well, otherwise 0. 
-                                          Also return a key "ratification" with value equal to a text explanation of why
-                                          the response does not seem to answer the question, or why it does. Here is the question and
+                                a numeric value. The value should be 0 if you can determine that the question
+                                 was definitely not answered properly. Otherwise make this value 1.   
+                                
+                                Also return a key "ratification" with value equal to a text explanation of your
+                                thinking. Here is the question and
                                           answer pair <question>""" + question + """</question>
                                                       <answer>""" + answer + """</answer>. 
                                         Remember to respond only with a dictionary and no other text. """
