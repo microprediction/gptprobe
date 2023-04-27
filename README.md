@@ -2,7 +2,7 @@
 Example:
 
     from gptprobe.private_setenv import NOTHING # Sets environ['OPEN_AI_KEY_0'], environ['OPEN_AI_KEY_1'], environ['OPEN_AI_KEY_2']
-    from gptprobe.askfor.dictfromquestion import ask_for_text_from_poorly_formatted_dict_text
+    from gptprobe.askfor.textfrompoorlyformatteddicttext import ask_for_text_from_poorly_formatted_dict_text
     messy_dict_text = """ Final scores are 
                                       Australia  1 
                                       Brazil     2
