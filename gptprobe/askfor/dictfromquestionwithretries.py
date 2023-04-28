@@ -19,7 +19,7 @@ def ask_for_dict_from_question_with_retries(question: str,
                                             retries=3)->dict:
     """
            Persistently ask for a dict, following up with parsing error information
-        
+
     :param question:    Any question that asks for a dictionary, or something that might be so interpreted
     :param key_choice:
     :param depth:
