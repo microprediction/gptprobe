@@ -1,5 +1,5 @@
 # gptprobe
-Example:
+Simple example:
 
     from gptprobe.private_setenv import NOTHING # Sets environ['OPEN_AI_KEY']
     from gptprobe.askfor.dictfromtext import ask_for_dict_from_text
