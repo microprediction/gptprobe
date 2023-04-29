@@ -1,6 +1,7 @@
 import openai
 import os
 from gptprobe.utils.enginedefaults import DEFAULT_ENGINE, DEFAULT_TEMPERATURE, DEFAULT_MAX_TOKENS
+from gptprobe.keysinenviron import keys_in_environ 
 
 # Main wrapper function for calling ChatGPT using a choice of key stored in environ, and params stored in environ
 
@@ -15,6 +16,8 @@ def ask_for_text_from_question(question,
     :param key_choice  0, 1, or 2  typically
     :return:
     """
+    assert keys_in_environ(),' See https://github.com/microprediction/gptprobe/ README for instructions on inserting open ai keys into environment variables' 
+    
     if engine is None:
         engine = os.environ.get('OPEN_AI_ENGINE') or DEFAULT_ENGINE
 
