@@ -18,14 +18,12 @@ help itself out of a rut, rephrases questions, ratifies answers using a differen
 
     pip install gptprobe 
     
-Then from [open ai developer](https://platform.openai.com/account/api-keys) help yourself to three keys and inject them as follows:
+Then from [open ai developer](https://platform.openai.com/account/api-keys) help yourself to a key and inject into environment somehow. E.g.
 
     import os 
-    os.environ['OPEN_AI_KEY_0'] = 'sk-ekOvFjAHKETQYADDAYADDA'
-    os.environ['OPEN_AI_KEY_1'] = 'sk-ekOvFjAHKETQYADDAYADDADO'
-    os.environ['OPEN_AI_KEY_2'] = 'sk-ekOvFjAHKETQYADDAYADDADOO'
+    os.environ['OPEN_AI_KEY'] = 'sk-ekOvFjAHKETQYABBADABBADDAYADDA'
 
-Maybe you want to mimic [gptprobe/public_setenv.py](https://github.com/microprediction/gptprobe/blob/main/gptprobe/public_setenv.py) and import NOTHING from it. 
+Maybe you want to mimic [gptprobe/public_setenv.py](https://github.com/microprediction/gptprobe/blob/main/gptprobe/public_setenv.py) and import NOTHING from it in your scripts. 
 
 ## User Guide
 
