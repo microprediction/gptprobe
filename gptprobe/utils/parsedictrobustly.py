@@ -1,6 +1,6 @@
 import re
 import json
-
+from gptprobe.utils.equivalence import dict_equal_or_none
 
 def dict_parsing_error(text):
     try:
@@ -129,24 +129,6 @@ def parse_dict_robustly_singular(text):
 
 
 
-def dict_equal_or_none(dict1, dict2):
-    # Check if both dictionaries have the same keys, or both are none
-
-    if not dict1:
-        return not dict2
-
-    if not dict2:
-        return not dict1
-
-    if set(dict1.keys()) != set(dict2.keys()):
-        return False
-
-    # Compare the values for each key
-    for key in dict1:
-        if dict1[key] != dict2[key]:
-            return False
-
-    return True
 
 
 if __name__=='__main__':

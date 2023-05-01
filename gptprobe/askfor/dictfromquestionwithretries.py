@@ -35,10 +35,10 @@ def ask_for_dict_from_question_with_retries(question: str,
         answer = ask_for_text_from_question(question=prompt, key_choice=key_choice)
         answer_dict = ask_for_dict_from_poorly_formatted_text(text=answer, key_choice=rotated_key,
                                                        numeric_values_only=numeric_values_only)
-        if answer_dict:
+        if isinstance(answer_dict,dict) and answer_dict:
             return answer_dict
 
-        parsing_error = 'The answer given could not be parsed in Python. The error was '+ dict_parsing_error(answer)
+        parsing_error = 'The answer given could not be parsed as a Python dict. The error was '+ dict_parsing_error(answer)
         prompt = contextual_question_from_answer_and_clarification(question=question, answer=answer, clarification=parsing_error)
 
     return {}

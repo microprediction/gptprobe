@@ -27,17 +27,17 @@
     }
   },
   "football_with": {
-    "question": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with one key for the player's first name and one key for the second name. Make both values 1",
+    "question": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with 'First' and 'Last' keys",
     "answer": {
-      "John": 1,
-      "Elway": 1
+      "First": "John",
+      "Last": "Elway"
     }
   },
   "football_without": {
-    "question": "What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with one key for the player's first name and one key for the second name. Make both values 1",
+    "question": "What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with 'First' and 'Last' keys",
     "answer": {
-      "John": 1,
-      "Elway": 1
+      "First": "John",
+      "Last": "Elway"
     }
   },
   "farmers_boy_1": {
