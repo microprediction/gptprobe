@@ -1,0 +1,69 @@
+{
+  "walking_1": {
+    "question": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Who went for a walk? \n Please answer with a dictionary with one double-quoted key for each walker and the value 1",
+    "answer": {
+      "Chloe": 1,
+      "Alexander": 1
+    }
+  },
+  "walking_2": {
+    "question": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Did Chloe see the cat? Please answer with a dictionary with one double-quoted key for Chloe whose value is 1 if she saw it and 0 otherwise.",
+    "answer": {
+      "Chloe": 1
+    }
+  },
+  "walking_3": {
+    "question": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Were the children frightened by the cat? Please answer with a dictionary with one double-quoted key Scared whose value is 1 if they were frightened and and 0 otherwise.",
+    "answer": {
+      "Scared": 0
+    }
+  },
+  "walking_4": {
+    "question": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n What did Alexander see? Please answer with a dictionary with one key for each thing that Alexander saw and the value 1.",
+    "answer": {
+      "Dog": 1,
+      "Tree": 1,
+      "Cat": 1
+    }
+  },
+  "football_with": {
+    "question": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with one key for the player's first name and one key for the second name. Make both values 1",
+    "answer": {
+      "John": 1,
+      "Elway": 1
+    }
+  },
+  "football_without": {
+    "question": "What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with one key for the player's first name and one key for the second name. Make both values 1",
+    "answer": {
+      "John": 1,
+      "Elway": 1
+    }
+  },
+  "farmers_boy_1": {
+    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Before Almonzo spoke, did Mr Thompson realize that he had lost his wallet? Please answer with a dictionary with one double-quoted key Realized whose value is 1 if yes and and 0 otherwise.",
+    "answer": {
+      "Realized": 0
+    }
+  },
+  "farmers_boy_2": {
+    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
+    "answer": {
+      "Still": 1
+    }
+  },
+  "farmers_boy_3": {
+    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
+    "answer": {
+      "Still": 1
+    }
+  }
+}
+
+
+       
+       
+
+
+
+ 
