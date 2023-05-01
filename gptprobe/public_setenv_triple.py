@@ -1,4 +1,5 @@
-# Just an example of setting the env variables required to use this package.
+# An alternative: set three env variables instead of just one. 
+# This anticipates stateful endpoints. 
 
 GPT_PROBE_0 = 'sk-ekOvFjAHKETQ9NOTAREALKEYSDNXwE3jyy7IHKA4s'
 GPT_PROBE_1 = 'sk-X0hK82TSSbananasinpijamasarerunning downz1gpT3'

@@ -1,5 +1,5 @@
 # gptprobe
-Example:
+Simple example:
 
     from gptprobe.askfor.dictfrompoorlyformattedtext import ask_for_text_from_poorly_formatted_dict_text
     messy_dict_text = """ Final score are 
