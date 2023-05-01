@@ -52,11 +52,30 @@
       "Still": 1
     }
   },
-  "farmers_boy_3": {
-    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
-    "answer": {
-      "Still": 1
-    }
+  "ella_0": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1990? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 1},
+    "page": 74
+  },
+  "ella_1": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1960? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 1},
+    "page": 74
+  },
+  "ella_2": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1860? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 0},
+    "page": 74
+  },
+  "ella_3": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg ever meet Ella Fitzgerald? Answer with a dictionary with a key Meet and value 1 if yes, otherwise a dictionary with key Meet and value 0",
+     "answer": {"Meet": 1},
+    "page": 74
+  },
+  "ella_4": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and value 1 if yes, otherwise a dictionary with key Beverage and value 0",
+     "answer": {"Beverage": 0},
+    "page": 74
   }
 }
 
