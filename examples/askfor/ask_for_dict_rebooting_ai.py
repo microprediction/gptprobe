@@ -4,6 +4,10 @@ from gptprobe.utils.equivalence import dict_equal_or_none
 from pprint import pprint
 
 # Compute the Artificial Gary Index (AGI)
+# ---------------------------------------
+#
+# Runs through examples of machine failure in "Rebooting AI" by Gary Marcus
+# Computes the fraction of answers that are correct 
 
 
 if __name__=='__main__':
@@ -23,9 +27,9 @@ if __name__=='__main__':
             question_count += 1
 
         try:
-           equal = dict_equal_or_none(d, answer)
+           is_right = dict_equal_or_none(d, answer, case_insensitive=True)
 
-           if equal:
+           if is_right:
                pass
                correct_count += 1
            else:

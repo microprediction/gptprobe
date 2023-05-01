@@ -36,17 +36,12 @@ def dict_equal_or_none(dict1, dict2, case_insensitive=False):
     if case_insensitive:
         d1 = lowercase_dict(dict1)
         d2 = lowercase_dict(dict2)
-        return dict_equal_or_none(d1,d2, case_insensitive=False)
-
-    if set(dict1.keys()) != set(dict2.keys()):
-        return False
-
-    # Compare the values for each key
-    for key in dict1:
-        if dict1[key] != dict2[key]:
+        return d1==d2
+    else:
+        try:
+            return dict1==dict2
+        except TypeError:
             return False
-
-    return True
 
 
 if __name__=='__main__':
