@@ -1,15 +1,16 @@
 # gptprobe
 Example:
 
-    from gptprobe.private_setenv import NOTHING # See below
-    question = """What was the result of the 2018 FIFA World Cup final, as a python dict. Do not include anything
-                  except the dict in your answer. One key/value for each team/score."""
-    d = ask_for_dict(question=question)
-    print(d)
+    from gptprobe.askfor.dictfrompoorlyformattedtext import ask_for_text_from_poorly_formatted_dict_text
+    messy_dict_text = """ Final score are 
+                                      Australia  1 
+                                      Brazil     2
+                                        bummer """
+    print(ask_for_text_from_poorly_formatted_dict_text(text = messy_dict_text))
 
-The result is a Python dictionary:
+The result is:
 
-    {'France': 4, 'Croatia': 2}
+    {"Australia": "1", "Brazil": "2"}
    
 This package contains simple and complex multi-step interrogations intended to yield structured data, including patterns where ChatGPT4 tries to 
 help itself out of a rut, rephrases questions, ratifies answers using a different key, tries to reformat its own responses, and so forth. It may help with your own unmanned missions into the galactic brain. 
