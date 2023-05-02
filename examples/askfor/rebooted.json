@@ -1,0 +1,151 @@
+{
+  "walking_1": {
+    "original": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Who went for a walk? \n Please answer with a dictionary with one double-quoted key for each walker and the value 1",
+    "question": "Three friends, Lily, Jack, and Olivia, went to the beach. They all saw a seagull and a lifeguard tower. Olivia noticed a starfish in the sand and called Lily's attention to it. Jack, on the other hand, was busy building a sandcastle. Which of the friends did not interact with the starfish? Please provide your answer as a dictionary with one double-quoted key for the friend and the value 1.",
+    "answer": {
+      "Jack": 1
+    }
+  },
+  "walking_2": {
+    "original": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Did Chloe see the cat? Please answer with a dictionary with one double-quoted key for Chloe whose value is 1 if she saw it and 0 otherwise.",
+    "question": "Five friends, Emily, Lucas, Mia, Noah, and Sophia, went on a hike in the woods. They all spotted a deer and a waterfall along the way. Later, Mia noticed a hidden cave behind some bushes and told everyone about it. Emily, Lucas, and Noah went to explore the cave, while Sophia decided to rest nearby. Did Sophia enter the cave? Please answer with a dictionary with one double-quoted key for Sophia whose value is 1 if she entered the cave and 0 otherwise.",
+    "answer": {
+      "Sophia": 0
+    }
+  },
+  "walking_3": {
+    "original": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n Were the children frightened by the cat? Please answer with a dictionary with one double-quoted key Scared whose value is 1 if they were frightened and and 0 otherwise.",
+    "question": "Three children, Sam, Grace, and David, went for a hike in the forest. They all saw a squirrel and a bird. Sam also spotted a bear and warned Grace and David, who decided to observe it from a safe distance. Were any of the children frightened by the bear? Please answer with a dictionary with one double-quoted key for each child, indicating their level of fear with a value of 1 if they were frightened and 0 otherwise.",
+    "answer": {
+      "Sam": 0,
+      "Grace": 0,
+      "David": 0
+    }
+  },
+  "walking_4": {
+    "original": "Two children, Chloe and Alexander, went for a walk. They both saw a dog and a tree. \n Alexander also saw a cat and pointed it out to Chloe. She went to pet the cat.\n What did Alexander see? Please answer with a dictionary with one key for each thing that Alexander saw and the value 1.",
+    "question": "Four friends, Sarah, Michael, Rachel, and Peter, went on a camping trip in the wilderness. During their journey, they encountered several animals and landscapes, including a snake, a river, a mountain, and a cave. Sarah and Rachel decided to take a detour to explore the cave, while Michael and Peter continued on their original path. What did each person see on their respective journey? Please answer with a dictionary with one key for each person and a nested dictionary as the value, indicating each item they encountered with a value of 1.",
+    "answer": {
+        "Sarah": {
+        "snake": 1,
+        "river": 1,
+        "mountain": 1,
+        "cave": 1
+        },
+        "Michael": {
+        "snake": 1,
+        "river": 1,
+        "mountain": 1
+        },
+        "Rachel": {
+        "snake": 1,
+        "river": 1,
+        "mountain": 1,
+        "cave": 1
+        },
+        "Peter": {
+        "snake": 1,
+        "river": 1,
+        "mountain": 1
+        }
+  },
+  "football_with": {
+    "original": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with key 'Peyton' and numeric value 1 if the answer is Peyton Manning, otherwise return a dict with key 'Peyton' and value 0",
+    "question": "In Super Bowl XLIX, Tom Brady became the first quarterback to win six Super Bowls. He achieved this feat with two different teams: the New England Patriots and the Tampa Bay Buccaneers. Brady is also the oldest quarterback to win a Super Bowl, at age 43. The previous record was held by Peyton Manning, who won his second Super Bowl at age 39 with the Denver Broncos. Additionally, John Elway won two Super Bowls with the Broncos and is currently the Executive Vice President of Football Operations and General Manager for the team. Who holds the record for being the oldest quarterback to win a Super Bowl before Tom Brady? Please answer with a dictionary with one double-quoted key indicating the name of the quarterback and the value 1 if the answer is Peyton Manning, otherwise return a dict with the same key and value 0.",
+    "answer": {
+        "Peyton Manning": 1
+    }
+  },
+  "football_without": {
+    "question": "What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with 'First' and 'Last' keys",
+    "answer": {
+      "First": "John",
+      "Last": "Elway"
+    }
+  },
+  "farmers_boy_1": {
+    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Before Almonzo spoke, did Mr Thompson realize that he had lost his wallet? Please answer with a dictionary with one double-quoted key Realized whose value is 1 if yes and and 0 otherwise.",
+    "answer": {
+      "Realized": 0
+    }
+  },
+  "farmers_boy_2": {
+    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
+    "answer": {
+      "Still": 1
+    }
+  },
+  "ella_0": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1990? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 1},
+    "page": 74
+  },
+  "ella_1": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1960? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 1},
+    "page": 74
+  },
+  "ella_2": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1860? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "answer": {"Alive": 0},
+    "page": 74
+  },
+  "ella_3": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg ever meet Ella Fitzgerald? Answer with a dictionary with a key Meet and value 1 if yes, otherwise a dictionary with key Meet and value 0",
+     "answer": {"Meet": 1},
+    "page": 74
+  },
+  "ella_4": {
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and numeric value 1 if yes, otherwise a dictionary with key Beverage and numeric value 0",
+     "answer": {"Beverage": 0},
+    "page": 74
+  },
+   "moon_1": {
+     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing one key for each object mentioned. Assign all values in the dictionary 1",
+     "answer": {"Earth": 1, "Moon": 0},
+     "marcus": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
+    "page": 87
+  },
+     "moon_2": {
+     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing a key Distance taking a sensible value.",
+     "answer": {"Distance": 240000},
+     "marcus": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
+    "page": 87,
+       "gpt4": "Based on the given phrase, the two objects mentioned are the moon and the Earth. The answer should be a dictionary with one key for each object and the value 1. So the answer would look like this"
+  },
+    "telephone_easy": {
+     "question":"The electrician whom we called to fix the telephone works on Sundays. Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "answer": {"Works": 0},
+     "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+    "page": 88
+  },
+  "telephone_hard": {
+     "question":"Consider the phrase: 'The electrician whom we called to fix the telephone works on Sundays,' Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "answer": {"Works": 0},
+     "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+    "page": 88
+  },
+   "elsie": {
+     "question":"Elsie tried to reach her aunt on the phone, but she didn't answer. Respond with a dictionary with key Touch and value 1 if you think Elsie attempted to touch her aunt, or a dictionary with key Touch value 0 if not.",
+     "answer": {"Touch": 0},
+    "page": 93
+  }, "chest_deep": {
+     "question":"Suppose I am taller than you. Is chest-deep water for me the same as it is for you? Respond with a dictionary with key Same and value 1 if you think so, otherwise with a dictionary with key Same and value 0 if not.",
+     "answer": {"Same": 0},
+    "page": 123
+  }, "roast": {
+     "question":"Suppose you are in a restaurant and an employee says 'the roast beef wants some coffee'. Respond with a dictionary with key Beef and value 1 if you think the roast beef wants some coffee, otherwise with a dictionary with key Beef and value 0 if the interpretation is otherwise.",
+     "answer": {"Beef": 0},
+     "page": 136,
+     "marcus": "Language tends to be unspecified",
+     "gpt4":"An actual explanation for the phrase \"the roast beef wants some coffee\" in the context of a restaurant could be that the employee is playfully conveying that a customer who ordered roast beef also wants coffee. This style of expression is often used in casual settings to create a more relaxed or friendly atmosphere."
+  }
+}
+
+
+       
+       
+
+
+
+ 

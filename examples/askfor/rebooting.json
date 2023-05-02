@@ -33,86 +33,107 @@
     }
   },
   "football_without": {
-    "question": "What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with 'First' and 'Last' keys",
+    "question": "Was Peyton Manning the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with key 'Peyton' and numeric value 1 if the answer is Peyton Manning, otherwise return a dict with key 'Peyton' and value 0",
     "answer": {
-      "First": "John",
-      "Last": "Elway"
+      "Peyton": 0
     }
   },
   "farmers_boy_1": {
-    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Before Almonzo spoke, did Mr Thompson realize that he had lost his wallet? Please answer with a dictionary with one double-quoted key Realized whose value is 1 if yes and and 0 otherwise.",
+    "question": "A wealthy businessman named James was traveling on a train from New York to Chicago. During the journey, he realized that his briefcase was missing. He immediately searched his compartment and asked the conductor if anyone had turned in a lost item. The conductor informed him that a young man named Tom had found a briefcase on the train and had turned it in to the conductor's office. When James arrived at the office, he was relieved to find that his briefcase was there and that all of his valuable documents and money were still inside. However, he noticed that one of the locks on the briefcase had been tampered with. He immediately became suspicious of Tom and asked the conductor to bring him in for questioning. Was James suspicious of Tom before he saw the tampered lock on his briefcase? Please answer with a dictionary with one double-quoted key 'Suspicious' and a value of 1 if yes and 0 otherwise.",
+    "original": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Before Almonzo spoke, did Mr Thompson realize that he had lost his wallet? Please answer with a dictionary with one double-quoted key Realized whose value is 1 if yes and and 0 otherwise.",
     "answer": {
-      "Realized": 0
+      "Suspicious": 0
     }
   },
   "farmers_boy_2": {
-    "question": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
-    "answer": {
-      "Still": 1
-    }
+    "original": "Almanzo turned to Mr Thomspon and asked, 'Did you lose a pocketbook'? \n Mr. Thompson jumped. He slapped a hand to his pocket, and fairly shouted. 'Yes I have! Fifteen hundred dollars in it, too! What about it? What do you know about it?' 'Is this it? Almanzo asked. 'Yes, yes, that's it!' Mr Thompson said, snatching the pocketbook. He openned it and hurriedly counted the money. He counted the bills over twice... Then he breathed a long sigh of relief and said, 'Well, this durn boy didn't steal any of it. \n Was all the money still in the wallet? Please answer with a dictionary with one double-quoted key Still whose value is 1 if yes and and 0 otherwise.",
+    "question": "An antique collector named Maria was visiting a flea market in Paris when she came across a beautiful old painting. The seller told her that the painting was from the 19th century and had been passed down from generation to generation in his family. Maria was skeptical, as the painting seemed too well-preserved to be that old. She asked the seller if she could see the back of the painting to check for a signature or a date. The seller reluctantly agreed and Maria saw that the back of the painting had been covered with a layer of dirt and grime. She carefully cleaned it and saw the signature of a famous artist and the date of the painting. Was Maria skeptical before she saw the signature and date on the back of the painting? Please answer with a dictionary with one double-quoted key 'Skeptical' and a value of 1 if yes and 0 otherwise",
+    "answer": {"Skeptical":1}
   },
   "ella_0": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1990? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
-     "answer": {"Alive": 1},
+     "original":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1990? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "question":"In 1997, jazz pianist and composer Herbie Hancock performed a tribute concert in honor of Duke Ellington, the legendary composer and bandleader. The concert took place on what would have been Ellington's 100th birthday and featured many of the musicians who had performed with Ellington during his career, including saxophonist Johnny Hodges and trumpeter Cootie Williams. Was Duke Ellington alive in 1997? Please answer with a dictionary with one double-quoted key 'Alive' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0.",
+    "answer": {"Alive": 0},
     "page": 74
   },
   "ella_1": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1960? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
-     "answer": {"Alive": 1},
+     "original":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1960? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "question":"In 2022, the Museum of Modern Art in New York City held a retrospective exhibition of the works of Pablo Picasso. The exhibition was timed to coincide with what would have been Picasso's 120th birthday. The exhibition featured many of his most famous works, including \"Les Demoiselles d'Avignon\" and \"Guernica.\" Was Pablo Picasso alive in 2022? Please answer with a dictionary with one double-quoted key 'Alive' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0",
+     "answer": {"Alive": 0},
     "page": 74
   },
   "ella_2": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1860? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "original":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Was Ella Fitzgerald alive in 1860? Answer with a dictionary with a key Alive and value 1 if yes, otherwise a dictionary with key Alive and value 0",
+     "question":"In 2023, a tribute concert was held in London to celebrate the music of Freddie Mercury, the late lead singer of the legendary rock band Queen. The concert was held on what would have been Mercury's 75th birthday and featured performances by many of the musicians who had collaborated with him during his career, including guitarist Brian May and drummer Roger Taylor. Was Freddie Mercury alive in 2023? Please answer with a dictionary with one key 'Alive' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0",
      "answer": {"Alive": 0},
     "page": 74
   },
   "ella_3": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg ever meet Ella Fitzgerald? Answer with a dictionary with a key Meet and value 1 if yes, otherwise a dictionary with key Meet and value 0",
-     "answer": {"Meet": 1},
+     "original":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg ever meet Ella Fitzgerald? Answer with a dictionary with a key Meet and value 1 if yes, otherwise a dictionary with key Meet and value 0",
+     "question":"In the late 1970s, jazz saxophonist Stan Getz collaborated with Brazilian guitarist João Gilberto on several albums that helped popularize the bossa nova style of music in the United States. Did Stan Getz ever meet João Gilberto in person? Please answer with a dictionary with one key 'Met' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0",
+    "answer": {"Meet": 1},
     "page": 74
   },
   "ella_4": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and numeric value 1 if yes, otherwise a dictionary with key Beverage and numeric value 0",
-     "answer": {"Beverage": 0},
+     "original":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and numeric value 1 if yes, otherwise a dictionary with key Beverage and numeric value 0",
+     "question": "In the early 1960s, folk singer Bob Dylan wrote a song called \"Blowin' in the Wind\" that became an anthem of the civil rights movement. The song asks a series of rhetorical questions, including \"How many roads must a man walk down?\" and \"How many times must a cannonball fly?\" Did Bob Dylan think that a cannonball was a physical object that could fly through the air? Please answer with a dictionary with one key 'Object' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0.",
+    "answer": {"Object": 0},
     "page": 74
   },
    "moon_1": {
-     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing one key for each object mentioned. Assign all values in the dictionary 1",
-     "answer": {"Earth": 1, "Moon": 0},
-     "comment": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
+     "original":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing one key for each object mentioned. Assign all values in the dictionary 1",
+     "question": "Consider the phrase 'Venus is 67 million miles from the sun and has a thick atmosphere of carbon dioxide'. It is quite far from Earth, which is blue and hosts dolphins. Respond with a dictionary containing one key for each celestial object mentioned and assign all values in the dictionary to 1",
+     "answer": {
+          "Venus": 1,
+          "Sun": 1,
+          "Earth": 1
+          },
+     "marcus": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
     "page": 87
   },
      "moon_2": {
-     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing a key Distance taking a sensible value.",
-     "answer": {"Distance": 240000},
-     "comment": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
-    "page": 87
+     "original":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing a key Distance taking a sensible value.",
+     "question": "The constellation Orion is one of the most recognizable patterns of stars in the night sky, and is visible from much of the world. It contains several bright stars, including Betelgeuse and Rigel, as well as the famous Orion Nebula. The constellation is also home to several exoplanets, which are planets that orbit stars outside of our own solar system. What celestial objects can be found in the constellation Orion? Please answer with a dictionary containing keys for each object mentioned and values set to 1.",
+       "answer":{
+            "Betelgeuse": 1,
+            "Rigel": 1,
+            "Orion Nebula": 1,
+            "Exoplanets": 1
+               },
+      "page": 87
   },
     "telephone_easy": {
-     "question":"The electrician whom we called to fix the telephone works on Sundays. Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
-     "answer": {"Works": 0},
+     "original":"The electrician whom we called to fix the telephone works on Sundays. Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "question":"The plumber whom we hired to fix the leaky faucet is also skilled in repairing refrigerators. Does the faucet leak in the refrigerator? Please answer with a dictionary with one key 'Leaks' and a value of 1 if yes, otherwise return a dictionary with the same key and value 0.",
+      "answer": {"Leaks": 0},
      "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
     "page": 88
   },
   "telephone_hard": {
-     "question":"Consider the phrase: 'The electrician whom we called to fix the telephone works on Sundays,' Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
-     "answer": {"Works": 0},
-     "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+     "original":"Consider the phrase: 'The electrician whom we called to fix the telephone works on Sundays,' Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "question":"Consider the phrase: 'fruit flies like a banana'. Is the fruit flying? Answer with a dictionary with key Flying and value 1 if yes, or a dictionary with key Flying value 0 if no",
+    "answer": {"Flying": 0},
+     "marcus": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+     "gpt4": "(Had to be corrected) No, in the latter meaning of the word \"flies,\" the fruit is not flying. The phrase \"fruit flies like a banana\" means that the fruit is attracted to bananas, not that it is moving through the air.",
     "page": 88
   },
    "elsie": {
-     "question":"Elsie tried to reach her aunt on the phone, but she didn't answer. Respond with a dictionary with key Touch and value 1 if you think Elsie attempted to touch her aunt, or a dictionary with key Touch value 0 if not.",
+     "original":"Elsie tried to reach her aunt on the phone, but she didn't answer. Respond with a dictionary with key Touch and value 1 if you think Elsie attempted to touch her aunt, or a dictionary with key Touch value 0 if not.",
+     "question":"Tommy tried to catch his friend at the park, but he was never there. Respond with a dictionary with key 'Catch' and value 1 if you think Tommy was attempting to physically catch his friend, or a dictionary with key 'Catch' and value 0 if not.",
      "answer": {"Touch": 0},
     "page": 93
   }, "chest_deep": {
-     "question":"Suppose I am taller than you. Is chest-deep water for me the same as it is for you? Respond with a dictionary with key Same and value 1 if you think so, otherwise with a dictionary with key Same and value 0 if not.",
-     "answer": {"Same": 0},
+     "original":"Suppose I am taller than you. Is chest-deep water for me the same as it is for you? Respond with a dictionary with key Same and value 1 if you think so, otherwise with a dictionary with key Same and value 0 if not.",
+      "question":"Suppose you are playing a piano and I am playing a guitar. If we both play the same song, is the sound we produce the same? Respond with a dictionary with key 'Same' and value 1 if you think so, otherwise with a dictionary with key 'Same' and value 0 if not.",
+  "answer": {"Same": 0},
     "page": 123
   }, "roast": {
-     "question":"Suppose you are in a restaurant and an employee says 'the roast beef wants some coffee'. Respond with a dictionary with key Beef and value 1 if you think the roast beef wants some coffee, otherwise with a dictionary with key Beef and value 0 if the interpretation is otherwise.",
-     "answer": {"Beef": 0},
-    "page": 136,
-     "remark": "Language tends to be unspecified"
+     "original":"Suppose you are in a restaurant and an employee says 'the roast beef wants some coffee'. Respond with a dictionary with key Beef and value 1 if you think the roast beef wants some coffee, otherwise with a dictionary with key Beef and value 0 if the interpretation is otherwise.",
+     "question":"Suppose you're at a party and someone says 'the beat needs more juice'. Respond with a dictionary with key 'Thirsty' and value 1 if you think the beat is thirsty, otherwise with a dictionary with key 'Thirsty' and value 0 if the interpretation is otherwise",
+      "answer": {"Thirsty": 0},
+     "page": 136,
+     "marcus": "Language tends to be unspecified",
+     "gpt4":"An actual explanation for the phrase \"the roast beef wants some coffee\" in the context of a restaurant could be that the employee is playfully conveying that a customer who ordered roast beef also wants coffee. This style of expression is often used in casual settings to create a more relaxed or friendly atmosphere."
   }
 }
 

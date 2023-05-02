@@ -16,12 +16,17 @@ def lowercase_dict(d):
     :param d: The input dictionary.
     :return: A new dictionary with lowercase keys and values (if they are strings).
     """
-    new_dict = {}
-    for key, value in d.items():
-        new_key = key.lower() if isinstance(key, str) else key
-        new_value = value.lower() if isinstance(value, str) else value
-        new_dict[new_key] = new_value
-    return new_dict
+    def _lowercase_dict(d):
+        new_dict = {}
+        for key, value in d.items():
+            new_key = key.lower() if isinstance(key, str) else key
+            if isinstance(value, dict):
+                new_value = _lowercase_dict(value)
+            else:
+                new_value = value.lower() if isinstance(value, str) else value
+            new_dict[new_key] = new_value
+        return new_dict
+    return _lowercase_dict(d)
 
 
 def dict_equal_or_none(dict1, dict2, case_insensitive=False):
