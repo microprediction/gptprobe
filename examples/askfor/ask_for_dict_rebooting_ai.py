@@ -31,6 +31,7 @@ if __name__ == '__main__':
         time.sleep(0.2)
 
         try:
+            d = dict([(k,int(v)) for k,v in d.items()])
             is_right = dict_equal_or_none(d, answer, case_insensitive=True)
 
             if is_right:
@@ -40,7 +41,7 @@ if __name__ == '__main__':
                 pprint({"qa": qa, "response": d})
         except Exception as e:
             print(e)
-            print('Fix this example! ')
+            print('This should not happen')
 
     agi = correct_count / question_count
     print({'question_count': question_count, 'correct_count': correct_count, 'agi': agi})

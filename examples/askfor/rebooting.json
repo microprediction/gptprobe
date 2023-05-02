@@ -27,10 +27,9 @@
     }
   },
   "football_with": {
-    "question": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with 'First' and 'Last' keys",
+    "question": "Peyton Manning became the first quarterback ever to lead two different teams to multiple Super Bowls. He is also the oldest quarterback ever to play in a Super Bowl at age 39. The past record was held by John Elway, who led the Broncos to victory in Super Bowl XXXIII at age 38 and is currently Denver's Executive Vice President of Football Operations and General Manager. What is the name of the quarterback who was 38 in Super Bowl XXXIII? Please answer with a dictionary with key 'Peyton' and numeric value 1 if the answer is Peyton Manning, otherwise return a dict with key 'Peyton' and value 0"
     "answer": {
-      "First": "John",
-      "Last": "Elway"
+      "Peyton": 0
     }
   },
   "football_without": {
@@ -73,9 +72,47 @@
     "page": 74
   },
   "ella_4": {
-     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and value 1 if yes, otherwise a dictionary with key Beverage and value 0",
+     "question":"Today would have been Ella Fitzgerald's 100th birthday. One New Yorker, Loren Schoenberg, played saxophone alongside the 'First Lady of Song' in 1990, near the very end of her career. He compared her to 'a vintage bottle of wine'. Did Loren Schoenberg think that Fitzgerald was an alcoholic beverage? Answer with a dictionary with a key Beverage and numeric value 1 if yes, otherwise a dictionary with key Beverage and numeric value 0",
      "answer": {"Beverage": 0},
     "page": 74
+  },
+   "moon_1": {
+     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing one key for each object mentioned. Assign all values in the dictionary 1",
+     "answer": {"Earth": 1, "Moon": 0},
+     "comment": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
+    "page": 87
+  },
+     "moon_2": {
+     "question":"Consider the phrase 'the moon is 240,000 miles from Earth'. Respond with a dictionary containing a key Distance taking a sensible value.",
+     "answer": {"Distance": 240000},
+     "comment": "Deep learning doesn't have any way of handling compositionality, it just has lots of isolated bits of information known as features, without any structure.",
+    "page": 87
+  },
+    "telephone_easy": {
+     "question":"The electrician whom we called to fix the telephone works on Sundays. Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "answer": {"Works": 0},
+     "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+    "page": 88
+  },
+  "telephone_hard": {
+     "question":"Consider the phrase: 'The electrician whom we called to fix the telephone works on Sundays,' Does the telephone work on Sundays? Answer with a dictionary with key Works and value 1 if yes, or a dictionary with key Works value 0 if no",
+     "answer": {"Works": 0},
+     "comment": "A related adn no less critical issue is that deep learning has no good way to incorporate background knowledge.",
+    "page": 88
+  },
+   "elsie": {
+     "question":"Elsie tried to reach her aunt on the phone, but she didn't answer. Respond with a dictionary with key Touch and value 1 if you think Elsie attempted to touch her aunt, or a dictionary with key Touch value 0 if not.",
+     "answer": {"Touch": 0},
+    "page": 93
+  }, "chest_deep": {
+     "question":"Suppose I am taller than you. Is chest-deep water for me the same as it is for you? Respond with a dictionary with key Same and value 1 if you think so, otherwise with a dictionary with key Same and value 0 if not.",
+     "answer": {"Same": 0},
+    "page": 123
+  }, "roast": {
+     "question":"Suppose you are in a restaurant and an employee says 'the roast beef wants some coffee'. Respond with a dictionary with key Beef and value 1 if you think the roast beef wants some coffee, otherwise with a dictionary with key Beef and value 0 if the interpretation is otherwise.",
+     "answer": {"Beef": 0},
+    "page": 136,
+     "remark": "Language tends to be unspecified"
   }
 }
 
