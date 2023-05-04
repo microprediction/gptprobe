@@ -51,5 +51,5 @@ if __name__=='__main__':
                """
     import os
     os.environ['GPTPROBE_VERBOSITY']="1"
-    d = ask_for_dict_from_question_with_ratification(question=question)
+    d = ask_for_dict_from_question_with_retries(question=question)
     print(d)
