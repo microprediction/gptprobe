@@ -9,6 +9,7 @@ import time
 #
 # Runs through examples of machine failure in "Rebooting AI" by Gary Marcus
 # Computes the fraction of answers that are correct
+# Discuss here: https://www.linkedin.com/posts/petercotton_rebooting-ai-building-artificial-intelligence-activity-7059238369511235584-grz_
 
 
 if __name__ == '__main__':
